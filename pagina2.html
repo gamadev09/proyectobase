@@ -4,6 +4,35 @@
 <head>
   <meta charset="UTF-8" />
   <title>Página 2</title>
+  <style>
+    :root {
+      --color-fondo: #08003c;
+      --color-texto: #ffffff;
+    }
+    body {
+      background-color: var(--color-fondo);
+      padding: 20px;
+    }
+    h1 {
+      color: var(--color-texto);
+    }
+    h2 {
+      color: var(--color-texto);
+    }
+    p {
+      color: var(--color-texto);
+    }
+    label {
+      color: var(--color-texto);
+    }
+    .enviar {
+      background-color: var(--color-texto);
+      color: var(--color-fondo);
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 
 <body>
@@ -21,7 +50,7 @@
     <label for="mensaje">Mensaje:</label><br />
     <textarea id="mensaje" name="mensaje" rows="5" cols="40" required></textarea><br /><br />
 
-    <input type="submit" value="Enviar" />
+    <input class="enviar" type="submit" value="Enviar" />
   </form>
 </body>
 </html>
